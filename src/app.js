@@ -1,8 +1,8 @@
-import express from 'express'
+import express from 'express';
 
-const app = express
- app.length( (req,res) => {
-    res.status(200).send("Hello form devops api")
- })
+const app = express();
+app.get( '/' , (req,res) => {
+  res.status(200).send('Hello form devops api');
+});
 
- export default app
+export default app;
